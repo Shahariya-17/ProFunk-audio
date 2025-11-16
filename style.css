@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+/* Navbar section */
+
+.navbar {
+  width: 100%;
+  height: 104px;
+  background: #ffffff;
+  z-index: 20;
+  border-bottom-left-radius: 48px;
+  border-bottom-right-radius: 48px;
+  box-shadow: 0 2px 8px rgba(20, 20, 20, 0.06);
+  position: absolute;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -10px;
+  width: 1320px;
+}
+
+.logo {
+  width: 140px;
+  display: block;
+  object-fit: contain;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: transform 0.12s ease, background 0.12s ease;
+  font-size: 16px;
+}
+
+.menu-link.active::before {
+  content: "•";
+  color: #111;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.contact-btn {
+  background: #111;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* Hero section */
+
+.hero {
+  height: 880px;
+  position: relative;
+  overflow: hidden;
+  margin-top: -15px;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  color: #00000033;
+  filter: brightness(70%);
+  z-index: 1;
+  margin-top: -70px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: clamp(36px, 8vw, 84px);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  color: #fff;
+  line-height: 0.95;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.hero-sub {
+  max-width: 760px;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #E9E9EA;
+  margin-bottom: 32px;
+  padding: 0 12px;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #a5a0a0;
+  text-decoration: none;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  margin-top: 70px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.icon {
+  text-align: center;
+  margin-left: 2px;
+}

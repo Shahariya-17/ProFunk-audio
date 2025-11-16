@@ -3,25 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PROFUNK</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>ProFunk Audio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font: Saira Condensed -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <style>
-      .font-saira-condensed{
-        font-family: "Saira Condensed", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-    </style>
+    <!-- font-awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  
-  <body class="font-saira-condensed">
-    <header></header>
+
+  <body>
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <div class="logo-area">
+          <img src="./assets/logo.png" alt="Profunk Audio" class="logo" />
+        </div>
+
+        <nav class="menu" aria-label="Primary">
+          <a href="#" class="menu-link active">Home</a>
+          <a href="#" class="menu-link">About</a>
+          <a href="#" class="menu-link contact-btn">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" aria-label="Intro">
+        <video
+          autoplay
+          muted
+          loop
+          class="bg-video"
+          poster="./assets/heroPoster.jpg"
+        >
+          <source src="./assets/banner-video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero-content container">
+          <h1 class="hero-title">Sound Stories</h1>
+
+          <p class="hero-sub">
+            Over 160,000 stunning sound effects (SFX) and over 650 royalty
+            <br />
+            free music tracks free for commercial and non commercial use.
+          </p>
+
+          <a
+            href="#"
+            class="explore-btn"
+            role="button"
+            aria-label="Explore Profunk Audio"
+          >
+            Explore
+            <span class="icon"> <i class="fa-solid fa-turn-down"></i></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <section></section>
   </body>
-  <link rel="stylesheet" href="styles/style.css" />
 </html>
