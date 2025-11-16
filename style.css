@@ -15,7 +15,7 @@ body {
 
 /* Navbar section */
 
-.navbar {
+.main-navbar {
   width: 100%;
   height: 104px;
   background: #ffffff;
@@ -26,7 +26,7 @@ body {
   position: absolute;
 }
 
-.navbar-inner {
+.inner-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,13 +40,13 @@ body {
   object-fit: contain;
 }
 
-.menu {
+.nav-menu {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.menu-link {
+.nav-link {
   text-decoration: none;
   color: #111;
   font-weight: 600;
@@ -56,14 +56,14 @@ body {
   font-size: 16px;
 }
 
-.menu-link.active::before {
+.nav-link.active::before {
   content: "•";
   color: #111;
   margin-right: 8px;
   opacity: 0.7;
 }
 
-.contact-btn {
+.nav-btn{
   background: #111;
   color: #fff;
   padding: 10px 18px;
@@ -71,8 +71,9 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
-/* Hero section */
 
+
+/* Hero section */
 .hero {
   height: 880px;
   position: relative;
