@@ -379,71 +379,88 @@ body {
 
 
 
+/* ===== Sound Effect Section ===== */
 
-/* Sound effect Section */
-.sound-container{
+/* Base Styles */
+.sound-container {
     padding: 80px 10%;
+    box-sizing: border-box;
 }
 
-.sound-contain{
+.sound-contain {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 34px 34px 0 0;
     background-color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
 }
 
-.button-container{
+.button-container {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 18px;
     margin-top: 18px;
+    flex-wrap: wrap;
 }
 
-.sound-title{
+.sound-title {
     color: #1D1F2C;
     font-size: 56px;
     font-weight: 700;
+    margin: 0;
 }
 
-.sound-description{
+.sound-description {
     color: #777980;
     font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.5;
 }
 
-.sound-cards{
+.sound-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin: 40px 0px;
+    width: 100%;
 }
 
-.card{
+.card {
     border: 1px solid #EAEFF2;
     border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.card-image{
-    border-radius: 12px;
+.card-contain {
+    padding: 27px;
+    box-sizing: border-box;
 }
 
-.card-header{
+.card-header {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.card-title{
+.card-image {
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card-title {
     color: #1D1F2C;
     font-size: 24px;
     font-weight: 600;
 }
 
-.card-contain{
-    padding: 27px;
-}
-
-.audio-container{
+.audio-container {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -452,22 +469,19 @@ body {
     border-radius: 24px;
     margin: 30px 0px;
 }
-
-.time{
-    color: #4A4C56;
-    font-size: 14px;
-    font-weight: 300;
+.audio-container img{
+    width: 100%;
 }
 
-.card-button{
+
+.card-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 4px;
-    margin-top: -20px;
 }
 
-.card-btn{
+.card-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,61 +491,72 @@ body {
     cursor: pointer;
 }
 
-.border-1{
+.border-1 {
     border-radius: 0 0 0 16px;
 }
 
-.border-3{
+.border-3 {
     border-radius: 0 0 16px 0;
 }
 
+/* ===== Responsive ===== */
 
+/* Mobile (max-width: 599px) */
+@media (max-width: 599px) {
+    .sound-container {
+        padding: 40px 5%;
+    }
 
-/* Responsive sound effect section */
-/* Mobile  */
-.sound-container {
-    padding: 50px 5%;
+    .sound-contain {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .sound-title {
+        font-size: 32px;
+    }
+
+    .sound-description {
+        font-size: 16px;
+    }
+
+    .sound-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin: 30px 0;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-image {
+        width: 70px;
+        height: 70px;
+    }
+    .audio-container img{
+    width: 100%;
+}
 }
 
-.sound-contain {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.button-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    margin-top: 15px;
-}
-
-.sound-title {
-    font-size: 36px;
-}
-
-.sound-description {
-    font-size: 16px;
-}
-
-.sound-cards {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-    margin: 30px 0px;
-}
-
-.card-title {
-    font-size: 18px;
-}
-
-/* Tablet  */
-@media (min-width: 600px) {
+/* Tablet (600px - 991px) */
+@media (min-width: 600px) and (max-width: 991px) {
     .sound-container {
         padding: 60px 8%;
     }
 
     .sound-contain {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .button-container {
@@ -556,9 +581,17 @@ body {
     .card-title {
         font-size: 20px;
     }
+
+    .card-image {
+        width: 75px;
+        height: 75px;
+    }
+    .audio-container img{
+    width: 100%;
+}
 }
 
-/* Desktop */
+/* Desktop (992px and above) */
 @media (min-width: 992px) {
     .sound-container {
         padding: 80px 10%;
@@ -591,9 +624,15 @@ body {
     .card-title {
         font-size: 24px;
     }
+
+    .card-image {
+        width: 80px;
+        height: 80px;
+    }
+    .audio-container img{
+    width: 100%;
 }
-
-
+}
 
 
 
