@@ -650,13 +650,18 @@ a:hover{
     display: flex;
     align-items: center;
     gap: 8px;
+    color: white;
 }
 
-.icon{
+.icon {
     padding: 16px;
-    background-color: white;
+    background-color: #ffffff !important; 
     border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 
