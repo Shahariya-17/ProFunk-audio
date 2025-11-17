@@ -843,7 +843,7 @@ body {
 
 
 
-/* catalog Container */
+/* catalog Section */
 .catalog-container{
     padding: 80px 10%;
     border-radius: 45px;
@@ -882,6 +882,25 @@ body {
     justify-content: start;
 }
 
+/* Responsive catalog section */
+/* Tablet */
+@media (max-width: 991px) {
+    .catalog-contain {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+    .catalog-contain {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* Choose section */
 .choose-header{
     display: flex;
     justify-content: space-between;
@@ -925,10 +944,6 @@ body {
     border-radius: 16px;
 }
 
-
-
-
-/* Choose section */
 .choose-title{
     color: #1D1F2C;
     font-weight: 600;
